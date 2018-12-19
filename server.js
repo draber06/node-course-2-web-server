@@ -47,6 +47,15 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects',
+        projectLink: 'https://stormy-everglades-47826.herokuapp.com/',
+    });
+});
+
+//projects
+
 app.get('/bad', (req, res) => {
     res.send({ error: 'There was an error' });
 });
